@@ -93,7 +93,7 @@ stages:
       - 'docker image save --output ${IMAGE_TAR_ARCHIVE} ${IMAGE_NAME}'
       - >-
         export TRIVY_EXIT_CODE=$(trivy image --input ${IMAGE_TAR_ARCHIVE}
-        --severity ${TRIVY_SEVERITY_LEVEL} --output build/jib-report.xml
+        --severity ${TRIVY_SEVERITY_LEVEL} --output target/jib-report.xml
         --format template --template "@contrib/junit.tpl")
     artifacts:
       BuildStage@OpenJDK:
@@ -121,7 +121,7 @@ stages:
           - 'docker image save --output ${IMAGE_TAR_ARCHIVE} ${IMAGE_NAME}'
           - >-
             export TRIVY_EXIT_CODE=$(trivy image --input ${IMAGE_TAR_ARCHIVE}
-            --severity ${TRIVY_SEVERITY_LEVEL} --output build/jib-report.xml
+            --severity ${TRIVY_SEVERITY_LEVEL} --output target/jib-report.xml
             --format template --template "@contrib/junit.tpl")
         artifacts:
           BuildStage@OpenJDK:
