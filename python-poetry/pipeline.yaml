@@ -144,7 +144,7 @@ stages:
             value: 'samples/dockerhub:access_token'
       - pluginName: 4.27-DinD
         pluginAliasName: REGISTRY-GitHub
-        isActive: true
+        isActive: false
         metadata:
           '4.27-DIND:PRIVILEGED': 'true'
         commands:
