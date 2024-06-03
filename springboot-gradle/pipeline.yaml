@@ -142,9 +142,13 @@ stages:
             ${DOCKERHUB_USERNAME} --password-stdin ${DOCKERHUB_URL}
           - 'docker image load --input ${IMAGE_TAR_ARCHIVE}'
           - >-
-            docker tag ${IMAGE_NAME}:${IMAGE_TAG}
-            ${DOCKERHUB_REPOSITORY}:${IMAGE_NAME}-${IMAGE_TAG}
-          - 'docker push ${DOCKERHUB_REPOSITORY}:${IMAGE_NAME}-${IMAGE_TAG}'
+            SOURCE_IMAGE=echo ${IMAGE_NAME}:${IMAGE_TAG} | tr '[:upper:]'
+            '[:lower:]'
+          - >-
+            TARGET_IMAGE=echo ${DOCKERHUB_REPOSITORY}:${IMAGE_NAME}-${IMAGE_TAG}
+            | tr '[:upper:]' '[:lower:]'
+          - 'docker tag ${SOURCE_IMAGE} ${TARGET_IMAGE}'
+          - 'docker push ${TARGET_IMAGE}'
         artifacts:
           ImageStage@TRIVY-BuildPack:
             - type: exported-variable
@@ -179,11 +183,13 @@ stages:
             --password-stdin ${GITHUB_URL}
           - 'docker image load --input ${IMAGE_TAR_ARCHIVE}'
           - >-
-            docker tag ${IMAGE_NAME}:latest
-            ${GITHUB_URL}/${GITHUB_REPOSITORY}/${IMAGE_NAME}:${IMAGE_TAG}
+            SOURCE_IMAGE=echo ${IMAGE_NAME}:${IMAGE_TAG} | tr '[:upper:]'
+            '[:lower:]'
           - >-
-            docker push
-            ${GITHUB_URL}/${GITHUB_REPOSITORY}/${IMAGE_NAME}:${IMAGE_TAG}
+            TARGET_IMAGE=echo ${GITHUB_URL}/${GITHUB_REPOSITORY}/${IMAGE_NAME} |
+            tr '[:upper:]' '[:lower:]'
+          - 'docker tag ${SOURCE_IMAGE} ${TARGET_IMAGE}'
+          - 'docker push ${TARGET_IMAGE}'
         artifacts:
           ImageStage@TRIVY-JiB:
             - type: exported-variable
