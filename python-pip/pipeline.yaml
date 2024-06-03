@@ -12,12 +12,12 @@ notification:
     - PIPELINE_EXECUTION_FAILED
     - PIPELINE_EXECUTION_STARTED
   emailAddress:
-    - mark@mrwconsulting.tech
+    - support@mrwconsulting.tech
 source:
   type: CodeStar
   codeStar:
     branch: main
-    repository: mrwconsulting/shinto-samples
+    repository: mrwconsulting/CiFlex-Samples
     codeStarArn: >-
       arn:aws:codestar-connections:us-east-1:730335505696:connection/eb71c2a0-3123-421c-8f82-07f4b96d66eb
 stages:
@@ -58,7 +58,7 @@ stages:
             value: 'samples/codacy:project_token'
           CODACY_PROJECT_NAME:
             type: PLAINTEXT
-            value: shinto-samples
+            value: CiFlex-Samples
           CODACY_COVERAGE_REPORT:
             type: PLAINTEXT
             value: .venv/reports/coverage.xml
@@ -143,7 +143,7 @@ stages:
             value: 'https://index.docker.io/v1/'
           DOCKERHUB_REPOSITORY:
             type: PLAINTEXT
-            value: mrwconsulting/shinto-samples
+            value: mrwconsulting/CiFlex-Samples
           DOCKERHUB_USERNAME:
             type: SECRETS_MANAGER
             value: 'samples/dockerhub:username'
@@ -182,7 +182,7 @@ stages:
             value: ghcr.io
           GITHUB_REPOSITORY:
             type: PLAINTEXT
-            value: mrwconsulting/shinto-samples
+            value: mrwconsulting/CiFlex-Samples
           GITHUB_USERNAME:
             type: SECRETS_MANAGER
             value: 'samples/github:username'
