@@ -81,7 +81,7 @@ stages:
   - stageName: ImageStage
     pluginName: '0.18-Trivy:Maven'
     pluginAliasName: TRIVY-JiB
-    isActive: true
+    isActive: false
     metadata:
       '0.18-TRIVY:MAVEN:PRIVILEGED': 'true'
     commands:
