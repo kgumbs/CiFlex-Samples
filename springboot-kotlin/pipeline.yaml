@@ -33,7 +33,9 @@ stages:
     postStep:
       - pluginName: SAST-Codacy
         pluginAliasName: SAST-Codacy
-        isActive: true
+        metadata:
+          'SAST-CODACY:PRIVILEGED': 'true'
+        isActive: false
         commands: []
         artifacts:
           BuildStage@OpenJDK:

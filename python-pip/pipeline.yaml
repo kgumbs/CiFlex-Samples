@@ -40,7 +40,7 @@ stages:
         pluginAliasName: SAST-Codacy
         metadata:
           'SAST-CODACY:PRIVILEGED': 'true'
-        isActive: true
+        isActive: false
         commands: []
         artifacts:
           BuildStage@Python:
