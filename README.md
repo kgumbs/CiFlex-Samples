@@ -67,6 +67,7 @@ List of plugins implemented by specific samples: <br>
 - [NodeJS Version 20.12.1 or greater](https://nodejs.org/en/)
 - [Docker Desktop Version 24.0.2 or greater](https://docs.docker.com/engine/install/)
 - [AWS CLI Version 2.11.6 or greater](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [CiFlexCtl] (https://www.npmjs.com/package/@ciflex/ciflexctl)
 - **CiFlex Token**: _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_ (30-Day License)
 
 ### **Provision Pipeline**
