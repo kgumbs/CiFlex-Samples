@@ -6,7 +6,6 @@ The CiFlex CICD Platform is an AWS CodePipeline generator, streamlining pipeline
 
 List of plugins implemented by all samples: <br>
 <ol>
-```
     - pluginName: SAST-Codacy <br>
       pluginAliasName: SAST-Codacy <br>
       isActive: false <br>
@@ -29,7 +28,6 @@ List of plugins implemented by all samples: <br>
     - pluginName: EKS-Deployment <br>
       pluginAliasName: EKS <br>
       isActive: false <br>
-```
 </ol>
 
 List of plugins implemented by specific samples: <br>
