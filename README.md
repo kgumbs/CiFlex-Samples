@@ -5,30 +5,28 @@ The CiFlex CICD Platform is an AWS CodePipeline generator, streamlining pipeline
 ## **Pipeline Samples:**
 
 List of plugins implemented by all samples: <br>
-<ol>
-    - pluginName: SAST-Codacy <br>
-      pluginAliasName: SAST-Codacy <br>
-      isActive: false <br>
+1.  pluginName: SAST-Codacy <br>
+    pluginAliasName: SAST-Codacy <br>
+    isActive: false <br>
 
-    - pluginName: SAST-Snyk <br>
-      pluginAliasName: SAST-Snyk <br>
-      isActive: false
+2.  pluginName: SAST-Snyk <br>
+    pluginAliasName: SAST-Snyk <br>
+    isActive: false
 
-    - pluginName: 4.27-DinD <br>
-      pluginAliasName: REGISTRY-DockerHub <br>
-      isActive: true <br>
+3.  pluginName: 4.27-DinD <br>
+    pluginAliasName: REGISTRY-DockerHub <br>
+    isActive: true <br>
 
-    - pluginName: 4.27-DinD <br>
-      pluginAliasName: REGISTRY-GitHub <br>
-      isActive: false <br>
+4.  pluginName: 4.27-DinD <br>
+    pluginAliasName: REGISTRY-GitHub <br>
+    isActive: false <br>
 
-    - pluginName: Manual-Approval <br>
-      isActive: false <br>
+5.  pluginName: Manual-Approval <br>
+    isActive: false <br>
 
-    - pluginName: EKS-Deployment <br>
-      pluginAliasName: EKS <br>
-      isActive: false <br>
-</ol>
+6.  pluginName: EKS-Deployment <br>
+    pluginAliasName: EKS <br>
+    isActive: false <br>
 
 List of plugins implemented by specific samples: <br>
 1. springboot-maven <br>
@@ -49,6 +47,7 @@ List of plugins implemented by specific samples: <br>
 - [AWS CLI Version 2.11.6 or greater](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - **CiFlex Token**: _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_ (30-Day License)
 
+### **Provision Pipeline**
 ```bash
 export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
 export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
