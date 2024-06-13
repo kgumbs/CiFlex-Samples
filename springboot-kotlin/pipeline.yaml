@@ -33,9 +33,9 @@ stages:
     postStep:
       - pluginName: SAST-Codacy
         pluginAliasName: SAST-Codacy
+        isActive: false
         metadata:
           'SAST-CODACY:PRIVILEGED': 'true'
-        isActive: false
         commands: []
         artifacts:
           BuildStage@OpenJDK:
@@ -59,7 +59,7 @@ stages:
             value: gh
       - pluginName: SAST-Snyk
         pluginAliasName: SAST-Snyk
-        isActive: true
+        isActive: false
         commands: []
         artifacts:
           BuildStage@OpenJDK:
@@ -135,7 +135,7 @@ stages:
     postStep:
       - pluginName: 4.27-DinD
         pluginAliasName: REGISTRY-DockerHub
-        isActive: true
+        isActive: false
         metadata:
           '4.27-DIND:PRIVILEGED': 'true'
         commands:
@@ -218,11 +218,11 @@ stages:
             value: 'samples/github:token'
   - stageName: DeployStage
     pluginName: Manual-Approval
-    isActive: true
+    isActive: false
     postStep:
       - pluginName: EKS-Deployment
         pluginAliasName: EKS
-        isActive: true
+        isActive: false
         commands:
           - ls -l
         variables:
