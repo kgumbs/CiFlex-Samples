@@ -40,6 +40,26 @@ List of plugins implemented by specific samples: <br>
       pluginAliasName: TRIVY-BuildPack <br>
       isActive: true <br>
 
+2. springboot-kotlin <br>
+    - pluginName: 8.5-Gradle
+      pluginAliasName: OpenJDK
+      isActive: true
+
+3. springboot-gradle <br>
+    - pluginName: 8.5-Gradle
+      pluginAliasName: OpenJDK
+      isActive: true
+
+4. python-poety <br>
+    - pluginName: 3.12-Poetry
+      pluginAliasName: Python
+      isActive: true
+
+5. python-pip <br>
+    - pluginName: 3.12-PiP
+      pluginAliasName: Python
+      isActive: true
+
 ### **Prerequisites**
 
 - [NodeJS Version 20.12.1 or greater](https://nodejs.org/en/)
