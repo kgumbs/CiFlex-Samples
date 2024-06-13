@@ -8,17 +8,22 @@ List of plugins implemented by all samples: <br>
 <ol>- pluginName: SAST-Codacy <br>
       pluginAliasName: SAST-Codacy <br>
       isActive: false <br>
+
     - pluginName: SAST-Snyk <br>
       pluginAliasName: SAST-Snyk <br>
       isActive: false <br>
+
     - pluginName: 4.27-DinD <br>
       pluginAliasName: REGISTRY-DockerHub <br>
       isActive: true <br>
+
     - pluginName: 4.27-DinD <br>
       pluginAliasName: REGISTRY-GitHub <br>
       isActive: false <br>
+
     - pluginName: Manual-Approval <br>
       isActive: false <br>
+
     - pluginName: EKS-Deployment <br>
       pluginAliasName: EKS <br>
       isActive: false <br></ol>
