@@ -1,5 +1,3 @@
-<img src="http://mrwconsulting.s3-website-us-east-1.amazonaws.com/.images/ciflex-platform.png"/>
-
 ## **Pipeline Samples:**
 
 List of plugins implemented by all samples: <br>
