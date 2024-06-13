@@ -19,7 +19,7 @@ source:
     branch: main
     repository: mrwconsulting/CiFlex-Samples
     codeStarArn: >-
-      arn:aws:codestar-connections:us-east-1:730335505696:connection/eb71c2a0-3123-421c-8f82-07f4b96d66eb
+      arn:aws:codestar-connections:us-east-1:<ACCOUNT ID>:connection/eb71c2a0-3123-421c-8f82-07f4b96d66eb
 stages:
   - stageName: BuildStage
     pluginName: 3.12-Poetry
