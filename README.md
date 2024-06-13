@@ -2,37 +2,30 @@
 
 The CiFlex CICD Platform is an AWS CodePipeline generator, streamlining pipeline creation by simplifying configuration for tasks such as building, unit testing, code style linting, and deploying. Its a fully managed continuous delivery service that automates AWS CodePipeline infrastructure, empowering DevOps teams to efficiently manage and automate their pipeline processes. With CiFlex, DevOps teams can create and publish plugins to introduce new features, enabling application teams to easily enhance their CICD workflows.
 
-## **Pipleline Samples:**
+## **Pipeline Samples:**
 
 List of plugins implemented by all samples: <br>
-    pluginName: SAST-Codacy <br>
+    * pluginName: SAST-Codacy <br>
     pluginAliasName: SAST-Codacy <br>
     isActive: false <br>
-
-    pluginName: SAST-Snyk <br>
+    * pluginName: SAST-Snyk <br>
     pluginAliasName: SAST-Snyk <br>
     isActive: false <br>
-
-    pluginName: 0.18-Trivy:Maven <br>
+    * pluginName: 0.18-Trivy:Maven <br>
     pluginAliasName: TRIVY-JiB <br>
     isActive: false <br>
-
-    pluginName: 0.18-Trivy:Maven <br>
+    * pluginName: 0.18-Trivy:Maven <br>
     pluginAliasName: TRIVY-BuildPack <br>
     isActive: true <br>
-
-    pluginName: 4.27-DinD <br>
+    * pluginName: 4.27-DinD <br>
     pluginAliasName: REGISTRY-DockerHub <br>
     isActive: true <br>
-
-    pluginName: 4.27-DinD <br>
+    * pluginName: 4.27-DinD <br>
     pluginAliasName: REGISTRY-GitHub <br>
     isActive: false <br>
-
-    pluginName: Manual-Approval <br>
+    * pluginName: Manual-Approval <br>
     isActive: false <br>
-
-    pluginName: EKS-Deployment <br>
+    * pluginName: EKS-Deployment <br>
     pluginAliasName: EKS <br>
     isActive: false <br>
 
