@@ -11,12 +11,6 @@ List of plugins implemented by all samples: <br>
     - pluginName: SAST-Snyk <br>
     pluginAliasName: SAST-Snyk <br>
     isActive: false <br>
-    - pluginName: 0.18-Trivy:Maven <br>
-    pluginAliasName: TRIVY-JiB <br>
-    isActive: false <br>
-    - pluginName: 0.18-Trivy:Maven <br>
-    pluginAliasName: TRIVY-BuildPack <br>
-    isActive: true <br>
     - pluginName: 4.27-DinD <br>
     pluginAliasName: REGISTRY-DockerHub <br>
     isActive: true <br>
@@ -31,7 +25,13 @@ List of plugins implemented by all samples: <br>
 
 List of plugins implemented by specific samples: <br>
 1. springboot-maven <br>
-    pluginName: 3.9-Maven <br>
+    - pluginName: 3.9-Maven <br>
     pluginAliasName: OpenJDK <br>
+    isActive: true <br>
+    - pluginName: 0.18-Trivy:Maven <br>
+    pluginAliasName: TRIVY-JiB <br>
+    isActive: false <br>
+    - pluginName: 0.18-Trivy:Maven <br>
+    pluginAliasName: TRIVY-BuildPack <br>
     isActive: true <br>
 
