@@ -43,24 +43,24 @@ List of plugins implemented by specific samples: <br>
     isActive: true <br>
 
 2. springboot-kotlin <br>
-    - pluginName: 8.5-Gradle <br>
-      pluginAliasName: OpenJDK <br>
-      isActive: true <br>
+    pluginName: 8.5-Gradle <br>
+    pluginAliasName: OpenJDK <br>
+    isActive: true <br>
 
 3. springboot-gradle <br>
-    - pluginName: 8.5-Gradle <br>
-      pluginAliasName: OpenJDK <br>
-      isActive: true <br>
+    pluginName: 8.5-Gradle <br>
+    pluginAliasName: OpenJDK <br>
+    isActive: true <br>
 
 4. python-poety <br>
-    - pluginName: 3.12-Poetry <br>
-      pluginAliasName: Python <br>
-      isActive: true <br>
+    pluginName: 3.12-Poetry <br>
+    pluginAliasName: Python <br>
+    isActive: true <br>
 
 5. python-pip <br>
-    - pluginName: 3.12-PiP <br>
-      pluginAliasName: Python <br>
-      isActive: true <br>
+    pluginName: 3.12-PiP <br>
+    pluginAliasName: Python <br>
+    isActive: true <br>
 
 ### **Prerequisites**
 
