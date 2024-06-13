@@ -30,35 +30,37 @@ List of plugins implemented by all samples: <br>
 
 List of plugins implemented by specific samples: <br>
 1. springboot-maven <br>
-    - pluginName: 3.9-Maven <br>
-      pluginAliasName: OpenJDK <br>
-      isActive: true <br>
-    - pluginName: 0.18-Trivy:Maven <br>
-      pluginAliasName: TRIVY-JiB <br>
-      isActive: false <br>
-    - pluginName: 0.18-Trivy:Maven <br>
-      pluginAliasName: TRIVY-BuildPack <br>
-      isActive: true <br>
+    pluginName: 3.9-Maven <br>
+    pluginAliasName: OpenJDK <br>
+    isActive: true <br>
+
+    pluginName: 0.18-Trivy:Maven <br>
+    pluginAliasName: TRIVY-JiB <br>
+    isActive: false <br>
+
+    pluginName: 0.18-Trivy:Maven <br>
+    pluginAliasName: TRIVY-BuildPack <br>
+    isActive: true <br>
 
 2. springboot-kotlin <br>
-    - pluginName: 8.5-Gradle
-      pluginAliasName: OpenJDK
-      isActive: true
+    - pluginName: 8.5-Gradle <br>
+      pluginAliasName: OpenJDK <br>
+      isActive: true <br>
 
 3. springboot-gradle <br>
-    - pluginName: 8.5-Gradle
-      pluginAliasName: OpenJDK
-      isActive: true
+    - pluginName: 8.5-Gradle <br>
+      pluginAliasName: OpenJDK <br>
+      isActive: true <br>
 
 4. python-poety <br>
-    - pluginName: 3.12-Poetry
-      pluginAliasName: Python
-      isActive: true
+    - pluginName: 3.12-Poetry <br>
+      pluginAliasName: Python <br>
+      isActive: true <br>
 
 5. python-pip <br>
-    - pluginName: 3.12-PiP
-      pluginAliasName: Python
-      isActive: true
+    - pluginName: 3.12-PiP <br>
+      pluginAliasName: Python <br>
+      isActive: true <br>
 
 ### **Prerequisites**
 
