@@ -4,41 +4,43 @@ The CiFlex CICD Platform is an AWS CodePipeline generator, streamlining pipeline
 
 ## **Pipeline Samples:**
 
-List of plugins implemented by all samples: <br />
+List of plugins implemented by all samples: <br>
 <ol>
-    - pluginName: SAST-Codacy <br />
-      pluginAliasName: SAST-Codacy <br />
-      isActive: false <br />
-
-    - pluginName: SAST-Snyk <br />
-      pluginAliasName: SAST-Snyk <br />
+```
+    - pluginName: SAST-Codacy <br>
+      pluginAliasName: SAST-Codacy <br>
+      isActive: false <br>
+      
+    - pluginName: SAST-Snyk <br>
+      pluginAliasName: SAST-Snyk <br>
       isActive: false
 
-    - pluginName: 4.27-DinD <br />
-      pluginAliasName: REGISTRY-DockerHub <br />
-      isActive: true <br />
+    - pluginName: 4.27-DinD <br>
+      pluginAliasName: REGISTRY-DockerHub <br>
+      isActive: true <br>
 
-    - pluginName: 4.27-DinD <br />
-      pluginAliasName: REGISTRY-GitHub <br />
-      isActive: false <br />
+    - pluginName: 4.27-DinD <br>
+      pluginAliasName: REGISTRY-GitHub <br>
+      isActive: false <br>
 
-    - pluginName: Manual-Approval <br />
-      isActive: false <br />
+    - pluginName: Manual-Approval <br>
+      isActive: false <br>
 
-    - pluginName: EKS-Deployment <br />
-      pluginAliasName: EKS <br />
-      isActive: false <br />
+    - pluginName: EKS-Deployment <br>
+      pluginAliasName: EKS <br>
+      isActive: false <br>
+```
 </ol>
 
-List of plugins implemented by specific samples: <br />
-1. springboot-maven <br />
-    - pluginName: 3.9-Maven <br />
-      pluginAliasName: OpenJDK <br />
-      isActive: true <br />
-    - pluginName: 0.18-Trivy:Maven <br />
-      pluginAliasName: TRIVY-JiB <br />
-      isActive: false <br />
-    - pluginName: 0.18-Trivy:Maven <br />
-      pluginAliasName: TRIVY-BuildPack <br />
-      isActive: true <br />
+List of plugins implemented by specific samples: <br>
+1. springboot-maven <br>
+    - pluginName: 3.9-Maven <br>
+      pluginAliasName: OpenJDK <br>
+      isActive: true <br>
+    - pluginName: 0.18-Trivy:Maven <br>
+      pluginAliasName: TRIVY-JiB <br>
+      isActive: false <br>
+    - pluginName: 0.18-Trivy:Maven <br>
+      pluginAliasName: TRIVY-BuildPack <br>
+      isActive: true <br>
 
