@@ -15,7 +15,7 @@ source:
   type: CodeStar
   codeStar:
     branch: main
-    repository: kgumbs/shinto-samples-v4
+    repository: kgumbs/ciflex-samples
     codeStarArn: >-
       arn:aws:codestar-connections:us-east-1:340717391351:connection/a43a9fd1-d254-479d-bcf4-cf3fc443a503
 stages:
@@ -161,7 +161,7 @@ stages:
             value: 'https://index.docker.io/v1/'
           DOCKERHUB_REPOSITORY:
             type: PLAINTEXT
-            value: kwesigumbs/shinto-samples
+            value: kwesigumbs/ciflex-samples
           DOCKERHUB_USERNAME:
             type: SECRETS_MANAGER
             value: 'samples/dockerhub:username'
@@ -198,7 +198,7 @@ stages:
             value: 'ghcr.io'
           GITHUB_REPOSITORY:
             type: PLAINTEXT
-            value: kgumbs/shinto-samples-v4
+            value: kgumbs/ciflex-samples
           GITHUB_USERNAME:
             type: SECRETS_MANAGER
             value: 'samples/github/user:name'
